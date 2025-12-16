@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Maison Emma Maroc</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f6f5f1;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    margin-top: 0;
+}
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #0e0e0e;
+    color: #fff;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+header h1 {
+    font-size: 44px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 18px;
+    color: #d4af37;
+    margin-top: 10px;
+}
+
+/* ===== ABOUT ===== */
+.about {
+    text-align: center;
+    line-height: 1.9;
+}
+
+/* ===== PRODUCTS ===== */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.product {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.product h4 {
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.product p {
+    font-size: 14px;
+    color: #555;
+}
+
+.price {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* ===== WHY ===== */
+.why {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    text-align: center;
+}
+
+.why div {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+
+/* ===== DELIVERY ===== */
+.delivery {
+    text-align: center;
+    line-height: 2;
+}
+
+/* ===== CTA ===== */
+.cta {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.cta a {
+    background: #0e0e0e;
+    color: #fff;
+    padding: 18px 45px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #0e0e0e;
+    color: #aaa;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* ===== WHATSAPP FLOAT ===== */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: #fff;
+    padding: 15px 22px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    z-index: 999;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Maison Emma Maroc</h1>
+    <p>L’élégance et l’authenticité du Maroc</p>
+</header>
+
+<section class="about">
+    <h2>À propos de nous</h2>
+    <p>
+        Maison Emma Maroc est une marque spécialisée dans la vente de savons naturels
+        et de djellabas marocaines. Nous valorisons l’artisanat marocain à travers
+        des produits authentiques, élégants et de qualité.
+    </p>
+</section>
+
+<section>
+    <h2>Nos produits</h2>
+
+    <h3 style="text-align:center;">🧼 Savons naturels</h3>
+    <div class="products">
+        <div class="product">
+            <img src="images/savon1.jpeg" alt="Savon au ghassoul">
+            <h4>Savon naturel au ghassoul</h4>
+            <p>Purifie la peau – 100% naturel</p>
+            <span class="price">3000 FCFA</span>
+        </div>
+
+        <div class="product">
+            <img src="images/savon2.jpeg" alt="Savon à l’argan">
+            <h4>Savon à l’huile d’argan</h4>
+            <p>Nourrissant – idéal pour peaux sèches</p>
+            <span class="price">3000 FCFA</span>
+        </div>
+    </div>
+
+    <h3 style="text-align:center; margin-top:60px;">👗 Djellabas marocaines</h3>
+    <div class="products">
+        <div class="product">
+            <img src="images/djellaba1.jpeg" alt="Djellaba traditionnelle">
+            <h4>Djellaba marocaine traditionnelle</h4>
+            <p>Tissu de qualité – style élégant</p>
+            <span class="price">18000 FCFA</span>
+        </div>
+
+        <div class="product">
+            <img src="images/djellaba2.jpeg" alt="Djellaba moderne">
+            <h4>Djellaba moderne</h4>
+            <p>Design moderne – finitions soignées</p>
+            <span class="price">18000 FCFA</span>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Pourquoi nous choisir ?</h2>
+    <div class="why">
+        <div>✔ Produits authentiques</div>
+        <div>✔ Qualité artisanale</div>
+        <div>✔ Service client sérieux</div>
+        <div>✔ Livraison rapide</div>
+    </div>
+</section>
+
+<section class="delivery">
+    <h2>Livraison & Paiement</h2>
+    <p>
+        🚚 Livraison partout au Maroc<br>
+        💰 Paiement à la livraison<br>
+        📞 Support client disponible
+    </p>
+</section>
+
+<div class="cta">
+    <a href="https://wa.me/212776005266" target="_blank">
+        Commander sur WhatsApp
+    </a>
+</div>
+
+<footer>
+    © 2025 Maison Emma Maroc — Tous droits réservés
+</footer>
+
+<a class="whatsapp" href="https://wa.me/212776005266" target="_blank">
+    💬 WhatsApp
+</a>
+
+</body>
+</html>
